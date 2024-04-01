@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow</title>
+
+    <!-- Incluye jQuery localmente -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dOW+5IUk1eZlm40J+NtgxgW43MYj7YyK4cS+ksmBv/H3fG59HjWpq4N1mZqA2OS0oXf8npMdQo06esCXrlS6Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <aside class="container side-bar">
+      <div href="" >
+        <h2> <i class="fa-solid fa-border-all opacity-60"></i> TaskFlow </h2>
+      </div>
+      <hr>
+      <ul>
+        <li><i class="fa-regular fa-clipboard opacity-60"></i> Board</li>
+        <li><i class="fa-solid fa-list opacity-60"></i> My Tasks</li>
+        <li><i class="fa-solid fa-gear opacity-60"></i> Settings</li>
+      </ul>
+
+      <hr>
+      <div>
+        <div class="space-between">
+          <span>Members</span>
+          <i id="openAddMember" class="fa-solid fa-plus opacity-60"></i>
+        </div>
+        <div id="addMemberSection" class="hidden" >
+          <input id="memberName" class="dark-input" type="text" placeholder="Name..." />
+          <button id="addMember" class="btn"><i class="fa-regular fa-circle-check complete opacity-60"></i></button>
+        </div>
+        <ul id="members">
+          <li class="member member-icon"><span class="member-span" style="background-color: #6975e3">M</span></li>
+        </ul>
+      </div>
+      
+    </aside>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

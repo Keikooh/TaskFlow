@@ -1,0 +1,306 @@
+body{
+  background-color: #F8F8FA;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #303033;
+  font-family: 'Nunito Variable', sans-serif;
+  user-select: none;
+  overflow: hidden;
+}
+
+/* COMPONENTS */
+.btn{
+  font-size: medium;
+  width: fit-content;
+  padding: 10px 15px;
+  background-color: #6975e3;
+  border: 2px solid #6975e3;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Nunito Variable', sans-serif;
+  transition: all 0.5s;
+}
+.btn-outlined{
+  font-size: medium;
+  width: fit-content;
+  padding: 10px 20px;
+  border: 2px solid #6975e3;
+  color: #6975e3;
+  border-radius: 10px;
+  font-family: 'Nunito Variable', sans-serif;
+  transition: all 0.5s;
+}
+
+.dark-input{
+  background-color: transparent;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+
+}
+.hidden{
+  display: none;
+}
+
+.shadow{
+  box-shadow: 0 0 5px 2px rgba(202, 202, 202, 0.4);
+}
+.half-divided{
+  display: flex;
+  gap: 0 10px;
+}
+.space-between{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.half-divided *{
+  width: 50%;
+}
+.opacity-60{
+  opacity: 0.6;
+}
+.rounded{
+  border-radius: 100%;
+}
+
+.completed{
+  color: #31d487;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.container > :not(hr) {
+  margin: 20px;
+}
+hr, h2, h1{
+  margin: 0;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.row{
+  width: 100%;
+  display: flex;
+  gap: 0 20px;
+}
+#addMemberSection{
+  transition: all 0.5s;
+}
+
+.list-container{
+  width: 31%;
+}
+
+
+input:focus {
+  border: 2px solid #5863c1; /* Cambiar el borde a azul cuando se hace clic en el input */
+  outline: none;
+  
+}
+input{
+  background-color:#efecef;
+  font-size: 15px;
+  border: 2px solid transparent;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Nunito Variable', sans-serif;
+}
+
+
+
+.control input{
+  background-color: transparent;
+  padding: 8px 5px;
+  border-bottom: 1px solid rgb(104, 104, 104);
+  font-family: 'Nunito Variable', sans-serif;
+  font-size: medium;
+  color: white;
+}
+
+/* HOVERS */
+.btn:hover{
+  background-color: #5863c1; 
+}
+
+
+#app .task-list{
+  height: 70vh;
+  padding: 10px;
+  border: 3px dashed #efecef;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pills span{
+  padding: 5px 15px;
+  border-radius: 16px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.pills{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.cardTask{
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #fffeff;
+  border-radius: 8px;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.cardTask div{
+  display: flex;
+  align-items: center;
+}
+
+.task-details *{
+  margin-bottom: 10px;
+}
+
+
+
+.sortable-placeholder{
+  background-color:#efecef;
+  padding: 5px;
+  height: 35px;
+  border-radius: 10px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#app{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+
+
+
+
+
+.side-bar{
+  width: 25vw;
+  height:100vh;
+  background-color: #1c1c1e;
+  color: white;
+  
+}
+
+
+.side-bar a{
+  text-decoration: none;
+  color: white;
+}
+
+.side-bar ul li{
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+hr{
+  width: 100%;
+  opacity: 0.3;
+}
+
+#sortable3 li{
+  opacity: 0.5;
+}
+
+
+
+
+.control{
+  margin: 30px;
+}
+
+
+.add-section{
+  position: absolute;
+  background-color: #F8F8FA;
+  border: 3px solid #efecef;
+  height: 100%;
+  width: 40vw;
+  right: -45vw;
+  transition: all 0.5s;
+}
+
+
+
+.open{
+  right: 0;
+}
+
+
+
+.form-section{
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section-line{
+  
+  display: flex;
+  align-items: center;
+}
+
+.form-section-line input{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  background-color:#efecef;
+}
+
+
+
+select{
+  width: 100%;
+}
+/* MEMBERS */
+
+#members{
+  display: flex;
+  overflow-x: auto;
+}
+
+.member{
+  color: white;
+  border-radius: 10px;
+
+}
+
+.member-icon{
+  display: flex;
+  margin-right: -5px;
+}
+.member-span{
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
